@@ -10,4 +10,4 @@ class Solution:
 N = Solution()
 print(N.getRow(3))
 
-# This is the solution of the problem Pascal traingle 2 of Leetcode 
+# This is the solution of the problem Pascal traingle 2 of Leetcode  
