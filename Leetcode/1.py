@@ -1,17 +1,28 @@
 class Solution:
-    def kidsWithCandies(self, candies, extraCandies):
-        Max = max(candies)
-        candies2 = []
-        candies3 = []
-        for i in range(0, len(candies)):
-            candies2.append(candies[i] + extraCandies)
-        for i in range(0, len(candies2)):
-            if(candies2[i] >= Max):
-                candies3.append(True)
-            else:
-                candies3.append(False)
-        return candies3
+    def shuffle(self, nums, n):
+        # # print(n+10)
+        # lenn = len(nums)
+        # X = nums[0:n]
+        # Y = nums[n:lenn]
+        # Z = []
+        # # print(X)
+        # # print(Y)
+        # for i in range(0, lenn):
+        #     for i in range(0, len(X)):
+        #         Z.append(X[i])
+        #         break
+        #     for i in range(0, len(Y)):
+        #         Z.append(Y[i])
+        #         break
+        # return Z
+        ans = []
+        N = len(nums)
+        for i in range(N//2):
+            ans.append(nums[i])
+            ans.append(nums[i-N//2])
+        return ans
 
 
-A = Solution()
-print(A.kidsWithCandies([4, 2, 1, 1, 2], 1))
+X = Solution()
+Arr = [10, 10, 20, 304]
+print(X.shuffle(Arr, 2))
