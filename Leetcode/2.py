@@ -1,3 +1,2 @@
-N = 5
-for i in range(N):
-    print("Abhishek")
+X = max("Verma", "Ashish", "Abhishek")
+print(X)
