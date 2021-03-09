@@ -5,6 +5,7 @@ class Solution:
         i = 0
         while(i < len(nums)):
             for j in range(nums[i]):
+                j = j  # No use
                 X.append(nums[i+1])
             i += 2
         return X
