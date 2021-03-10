@@ -1,4 +1,7 @@
 # Split a String in Balanced Strings
+# Important Questions based on String, asked in many interviews
+
+
 class Solution:
     def balancedStringSplit(self, s):
         left = 0
@@ -7,6 +10,7 @@ class Solution:
         if len(s) == 1:
             return 0
         for char in s:
+            # print(char)
             if (char == "L"):
                 left += 1
             else:
