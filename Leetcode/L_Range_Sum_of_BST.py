@@ -27,4 +27,4 @@ class Solution:
 
 
 X = Solution()
-print(X.rangeSumBST([10, 5, 15, 3, 7, 13, 18, 1, null, 6], 6, 10))
+print(X.rangeSumBST([10, 5, 15, 3, 7, 13, 18, 1, 6], 6, 10))
