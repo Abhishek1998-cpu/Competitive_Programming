@@ -1,5 +1,6 @@
 # https://www.geeksforgeeks.org/sum-of-all-odd-length-subarrays/
 
+# Sum of All Odd Length Subarrays
 class Solution:
     def sumOddLengthSubarrays(self, arr):
         sum = 0
