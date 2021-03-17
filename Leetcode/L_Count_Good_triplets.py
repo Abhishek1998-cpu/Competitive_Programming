@@ -1,3 +1,4 @@
+# Count Good Triplets
 class Solution:
     def countGoodTriplets(self, arr, a, b, c):
         N = len(arr)
