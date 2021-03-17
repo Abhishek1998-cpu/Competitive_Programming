@@ -1,24 +1,7 @@
-#include<stdio.h>
-#include<math.h>
-int f (int n);
+#include <stdio.h>
 int main()
 {
-    int n,z;
-    scanf("%d", &n);
-    z = f(n);
-    printf("%d",z);
-    return 0;
-}
-
-int f (int n) {
-  int ans = 0;
-  for (int i = 1; i < n; i++) {
-    if (i < n/2) {
-      ans -= i;
-    }
-    else {
-      ans += i;
-    }
-  }
-  return ans;
+  int arr[5] = {10, 20, 30, 40, 50};
+  printf("%d", arr[5]);
+  return 0;
 }
