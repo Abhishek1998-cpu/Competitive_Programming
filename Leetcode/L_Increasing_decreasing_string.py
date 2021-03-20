@@ -1,4 +1,5 @@
 # Increasing Decreasing String
+# Important Questions asked in Geekster Admission Assessment
 class Solution:
     def sortString(self, s):
         self.s = s
@@ -7,10 +8,13 @@ class Solution:
         for i in s:
             if i not in d:
                 d[i] = 1
+                print(d[i])
             else:
                 d[i] += 1
+                # print(d[i])
         res = ""
         t = sorted(list(set(s)))
+        print(t)
         while tot > 0:
             for j in range(len(t)):
                 if d[t[j]] > 0:
@@ -31,3 +35,4 @@ class Solution:
 
 X = Solution()
 print(X.sortString("rat"))
+print(X.sortString("aaaabbbbcccc"))
