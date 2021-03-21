@@ -1,4 +1,3 @@
-N = 5
-a = ["A"]*N
-print(a)
-print("".join(a))
+X = "I want Laptop"
+Y = X.replace("t", "x")
+print(Y)
