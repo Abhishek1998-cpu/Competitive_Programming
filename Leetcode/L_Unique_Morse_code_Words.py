@@ -1,4 +1,5 @@
 # Unique Morse Code Words
+# ord("a") gives the ASCII Code of a
 
 class Solution:
     def uniqueMorseRepresentations(self, words):
