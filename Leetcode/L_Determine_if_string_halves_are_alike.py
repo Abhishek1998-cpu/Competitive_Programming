@@ -1,3 +1,5 @@
+# Determine if string halves are alike
+
 class Solution:
     def halvesAreAlike(self, s):
         n = len(s)
