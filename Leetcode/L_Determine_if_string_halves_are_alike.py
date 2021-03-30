@@ -15,12 +15,13 @@ class Solution:
             if i in vowels:
                 counter2 += 1
         if counter1 == counter2:
-            return "true"
+            return True
         else:
-            return "false"
+            return False
 
 
 X = Solution()
 print(X.halvesAreAlike("book"))
 print(X.halvesAreAlike("textbook"))
 print(X.halvesAreAlike("MerryChristmas"))
+print(X.halvesAreAlike("AbCdEfGh"))
