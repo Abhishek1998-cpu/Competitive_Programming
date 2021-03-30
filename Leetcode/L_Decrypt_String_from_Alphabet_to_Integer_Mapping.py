@@ -12,3 +12,7 @@ class Solution:
                 res += d[s[i]]
                 i += 1
         return res
+
+
+X = Solution()
+print(X.freqAlphabets("10#11#12"))
