@@ -1,3 +1,5 @@
+# Number of Students doing Homework at a Given time
+
 class Solution:
     def busyStudent(self, startTime, endTime, queryTime):
         ans = 0
