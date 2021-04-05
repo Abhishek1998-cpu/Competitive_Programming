@@ -1,3 +1,5 @@
+# Design Circular Queue
+
 class MyCircularQueue:
 
     def __init__(self, k: int):
@@ -25,7 +27,7 @@ class MyCircularQueue:
     def Front(self) -> int:
         if self.isEmpty():
             return -1
-        return self.q[self.tail-1]
+        return self.q[self.head]
 
     def Rear(self) -> int:
         if self.isEmpty():
