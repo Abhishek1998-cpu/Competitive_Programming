@@ -1,3 +1,4 @@
+# Global and Local Inversions
 class Solution:
     def isIdealPermutation(self, A):
         N = len(A)
