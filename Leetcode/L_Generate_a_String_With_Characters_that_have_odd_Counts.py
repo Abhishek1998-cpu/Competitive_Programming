@@ -1,3 +1,5 @@
+# Generate a string with characters that have odd counts
+
 class Solution:
     def generateTheString(self, n):
         s = ""
