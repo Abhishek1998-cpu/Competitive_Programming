@@ -1,3 +1,5 @@
+# Find N Unique integers Sum up to Zero
+
 class Solution:
     def sumZero(self, n):
         X = []
@@ -10,7 +12,6 @@ class Solution:
                 X.append(i)
                 X.append(-(i))
             X.append(0)
-
         return X
 
         # return n
