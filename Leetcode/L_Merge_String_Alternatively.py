@@ -1,3 +1,5 @@
+# Merge String Alternatively
+
 class Solution:
     def mergeAlternately(self, word1, word2):
         w1 = collections.deque(word1)
