@@ -1,3 +1,4 @@
+# Flatten Nested List Iterator
 # """
 # This is the interface that allows for creating nested lists.
 # You should not implement it, or speculate about its implementation
@@ -20,8 +21,11 @@
 #        Return None if this NestedInteger holds a single integer
 #        """
 
+from collections import deque
+
+
 class NestedIterator:
-    def __init__(self, nestedList: [NestedInteger]):
+    def __init__(self, nestedList):
         def flatten(nl):
             tmp = []
             for i in nl:
