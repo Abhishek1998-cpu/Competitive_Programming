@@ -1,3 +1,4 @@
+# Remove All Adjacent Duplicates in String 2
 class Solution:
     def removeDuplicates(self, s, k):
         stack = []
