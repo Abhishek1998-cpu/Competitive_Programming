@@ -1,3 +1,1 @@
-X = "I want Laptop"
-Y = X.replace("t", "x")
-print(Y)
+print(4//2)
