@@ -1,3 +1,6 @@
+# Remove Nth Node From End of List
+
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -18,5 +21,6 @@ class Solution:
         slow.next = slow.next.next
         return head
 
+
 X = Solution()
-print(X.removeNthFromEnd([1,2,3,4,5],  2))
+print(X.removeNthFromEnd([1, 2, 3, 4, 5],  2))
