@@ -1,3 +1,5 @@
+# Longest Commmon Prefix
+
 from collections import Counter
 
 
