@@ -1,3 +1,5 @@
+# Count Binary SubStrings
+
 class Solution:
     def countBinarySubstrings(self, s: str) -> int:
         ans = 0
