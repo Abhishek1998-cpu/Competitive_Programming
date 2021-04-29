@@ -11,6 +11,7 @@ class Solution:
         # First Corner Case
         if (head == []):
             return []
+        # If head is not empty then
         current = head
         previous = None
         nextnode = None
