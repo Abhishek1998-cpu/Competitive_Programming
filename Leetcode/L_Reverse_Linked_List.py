@@ -1,4 +1,4 @@
-
+# Reverse Linked List
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -27,4 +27,9 @@ class Solution:
 # Input ->
 # [1,2,3,4,5]
 # [1,2]
+# []
+
+# Output ->
+# [5,4,3,2,1]
+# [2,1]
 # []

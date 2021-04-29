@@ -32,5 +32,5 @@ class Solution:
         return dummmy.next
 
 
-X = Solution()
-print(X.mergeTwoLists([1, 2, 4], [1, 3, 4]))
+# X = Solution()
+# print(X.mergeTwoLists([1, 2, 4], [1, 3, 4])) # It will not work as this, it is just a representation of the nodes. For example 1->2->4 and 1->3->4
