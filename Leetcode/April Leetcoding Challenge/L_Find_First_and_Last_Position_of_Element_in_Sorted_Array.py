@@ -1,3 +1,6 @@
+# Find First and Last Position of Element in a Sorted Array
+
+
 class Solution:
     def searchRange(self, nums, target: int):
         if target not in nums:
