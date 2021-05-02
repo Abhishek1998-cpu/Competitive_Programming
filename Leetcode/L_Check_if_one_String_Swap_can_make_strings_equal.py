@@ -1,3 +1,5 @@
+# Check if one string swap can make strings equal
+
 # Approach: First omit the elements which are the same and have the same index in both the strings. Then if the new strings are of length two and both the elements in each string are the same then only the swap is possible.
 from collections import Counter
 

@@ -1,2 +1,4 @@
-X = [1, 2, 3, 4]
-print(X[-1])
+X = "ABC"
+Y = X.replace("A", "")
+print(X)
+print(Y)
