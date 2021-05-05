@@ -1,3 +1,8 @@
+# Jump Game 2
+# Array
+# Greedy
+# BFS
+
 class Solution:
     def jump(self, nums) -> int:
         res = 0
