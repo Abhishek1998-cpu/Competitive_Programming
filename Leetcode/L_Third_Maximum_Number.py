@@ -1,3 +1,5 @@
+# Third Maximum Number
+
 class Solution:
     def thirdMax(self, nums) -> int:
         if(len(nums) < 3):
