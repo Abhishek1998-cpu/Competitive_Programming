@@ -1,3 +1,5 @@
+# Longest String Chain
+
 class Solution:
     def longestStrChain(self, words) -> int:
         s = set(words)
