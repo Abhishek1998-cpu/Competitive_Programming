@@ -4,6 +4,7 @@ class Solution:
         total = 0
         N = len(flowerbed)
         for i in range(N):
+            # print(i)
             if i - 1 >= 0 and flowerbed[i - 1] == 1:
                 continue
             if flowerbed[i] == 1:
