@@ -1,3 +1,6 @@
+# N - Queens
+# BackTracking
+
 from collections import defaultdict
 
 
