@@ -1,21 +1,16 @@
-# Both the solution are using the same approach
-# Solution 1 - Simple without OOP
-# X = list(map(int, input().split(" ")))
-# Y = len(X)
-# Z = []  # New list for Output
-# a = 0
-# for i in X:
-#     a = i + a
-#     Z.append(a)
-# print(Z)
+# Running Sum of 1d Array
 
-
-# Accepted Solution -- We have to use OOP for providing acceptance
 class Solution:
     def runningSum(self, nums):
-        Z = []  # New list for Output
-        a = 0
+        Y = 0
+        X = []
         for i in nums:
-            a = i + a
-            Z.append(a)
-        return(Z)
+            Y = Y + i
+            X.append(Y)
+
+        # print(nums)
+        return X
+
+
+X = Solution()
+print(X.runningSum([1, 2, 3, 4]))

@@ -1,4 +1,2 @@
-X = "ABC"
-Y = X.replace("A", "")
-print(X)
-print(Y)
+X = 16
+print(int(X**(.5)))

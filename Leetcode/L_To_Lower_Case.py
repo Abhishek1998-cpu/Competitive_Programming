@@ -1,8 +1,5 @@
 # To Lower Case
+
 class Solution:
-    def toLowerCase(self, str):
-        return str.lower()
-
-
-X = Solution()
-print(X.toLowerCase("Abhishek"))
+    def toLowerCase(self, s: str) -> str:
+        return s.lower()
