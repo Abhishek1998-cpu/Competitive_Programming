@@ -1,3 +1,6 @@
+# Maximum Erasure Value
+# Two pointers Sliding Windows Technique
+
 class Solution:
     def maximumUniqueSubarray(self, nums) -> int:
         nmap, total, best, left = [0] * 10001, 0, 0, 0
