@@ -1,3 +1,5 @@
+# N-Queens 2
+
 class Solution:
     def totalNQueens(self, n: int) -> int:
         self.output = 0
