@@ -1,3 +1,6 @@
+# Number of Different Integers in a String
+# String
+
 class Solution:
     def numDifferentIntegers(self, word: str) -> int:
         X = []
@@ -9,7 +12,7 @@ class Solution:
             X.append(i.lstrip("0"))
         X = list(set(X))
         return len(X)
-        
+
 
 X = Solution()
 print(X.numDifferentIntegers("a123bc34d8ef34"))
