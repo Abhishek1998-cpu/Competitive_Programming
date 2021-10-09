@@ -7,11 +7,15 @@
  */
 var maxProductDifference = function (nums) {
   var ans = 0;
-  nums.sort();
+  nums.sort(function (a, b) {
+    return a - b;
+  });
   X = nums.length;
-  ans = nums[X - 1] * nums[X - 2] - nums[0] * nums[1];
-  return ans;
+  Y = nums[X - 1] * nums[X - 2];
+  Z = nums[0] * nums[1];
+  return Y - Z;
 };
 
-console.log(maxProductDifference([5, 6, 2, 7, 4]));
-console.log(maxProductDifference([4, 2, 5, 9, 7, 4, 8]));
+// console.log(maxProductDifference([5, 6, 2, 7, 4]));
+// console.log(maxProductDifference([4, 2, 5, 9, 7, 4, 8]));
+console.log(maxProductDifference([1, 6, 7, 5, 2, 4, 10, 6, 4]));
