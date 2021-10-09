@@ -20,4 +20,4 @@ class Solution:
 
 X = Solution()
 print(X.sortSentence("is2 sentence4 This1 a3"))
-# print(X.sortSentence("Myself2 Me1 I4 and3"))
+print(X.sortSentence("Myself2 Me1 I4 and3"))
