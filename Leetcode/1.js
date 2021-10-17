@@ -1,13 +1,13 @@
-// Maximum Product Difference Between Two Pairs
-// Array Sorting
+// Minimum Number of Moves to Seat Everyone
+// Array Sorting JavaScript
 
 /**
- * @param {number[]} nums
+ * @param {number[]} seats
+ * @param {number[]} students
  * @return {number}
  */
-var maxProductDifference = function (nums) {
-  nums.sort();
-  return nums;
+var minMovesToSeat = function (seats, students) {
+  return seats;
 };
 
-console.log(maxProductDifference([5, 6, 2, 7, 4]));
+console.log(minMovesToSeat([3, 1, 5], [2, 7, 4]));

@@ -1,4 +1,5 @@
 # Minimum Number of Moves to Seat Everyone
+# Array Sorting
 
 class Solution:
     def minMovesToSeat(self, seats, students) -> int:
