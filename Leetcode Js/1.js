@@ -1,19 +1,13 @@
-// Minimum Number of Moves to Seat Everyone
-// Array Sorting JavaScript
-
 /**
- * @param {number[]} seats
- * @param {number[]} students
- * @return {number}
+ * @param {string} s
+ * @param {number} k
+ * @return {string}
  */
-var minMovesToSeat = function (seats, students) {
-  seats.sort((a, b) => b - a);
-  students.sort((a, b) => b - a);
-  let res = 0;
-  for (let k = 0; k < students.length; k++) {
-    res += Math.abs(students[k] - seats[k]);
-  }
-  return res;
+var truncateSentence = function (s, k) {
+  s = s.split(" ");
+  s = s.slice(0, k);
+  s = s.join(" ");
+  return s;
 };
 
-console.log(minMovesToSeat([3, 1, 5], [2, 7, 4]));
+console.log(truncateSentence("Hello how are you Contestant", 4));
