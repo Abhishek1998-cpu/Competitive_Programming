@@ -20,7 +20,9 @@ var getAllElements = function (root1, root2) {
   NodeList = [];
   inorder1(root1);
   inorder2(root2);
-  return NodeList.sort();
+  return NodeList.sort(function (a, b) {
+    return a - b;
+  });
 };
 
 var inorder1 = function (root1) {
