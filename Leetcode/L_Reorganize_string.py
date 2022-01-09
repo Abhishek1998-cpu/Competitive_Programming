@@ -1,5 +1,5 @@
 # Reorganize String
-# String Hashing Sorting
+# String Hashing Sorting 
 
 
 class Solution:
@@ -14,41 +14,34 @@ class Solution:
         # 3. Create Min Heap of -ve cnts = Max Heap of +ve cnts
         heapq.heapify(freqs)
 
-        # -- Now char with max count is at top of Heap
+        #-- Now char with max count is at top of Heap
 
         res = ''  # reorganized string to be formed
-
+        
         # 4. track the last character of reorganized string (inorder to avoid same adjacent character)
         prev = (0, '')  # last char of reorganized string & its current frequency
-
+        
         # 5. Heap Consumption
         while freqs:  # while all character are not consumed
-
-            # take the character with max count at present (in heap)
+            
+            # take the character with max count at present (in heap) 
             # ie most freq character, except prev
             cnt, char = heapq.heappop(freqs)
-
+            
             res += char  # add the character in resulted string
-
+          
             # NOTE : as -ve cnt are stored so doing `+`, but effectively its decreasing the frequency of {char}
-            cnt += 1     # freq update for {char},
+            cnt += 1     # freq update for {char}, 
 
-            if prev[0] != 0:  # prev char can now participate in string formation
+            if prev[0] != 0: # prev char can now participate in string formation
                 heapq.heappush(freqs, prev)
 
-            prev = cnt, char  # update prev character
+            prev = cnt, char # update prev character
 
         if prev[0] == 0:  # all alternating character are accomodated
-            return res
+            return res 
         else:             # last character will be repeated so not possible
             return ''
 
-
 X = Solution()
-<< << << < HEAD
-print(X.isMonotonic([1, 2, 2, 3]))
-print(X.isMonotonic([6, 5, 4, 4]))
-print(X.isMonotonic([1, 3, 2]))
-== == == =
 print(X.reorganizeString("aab"))
->>>>>> > 8d59a420680e0961fc1b9de40d809a48a80bdb76
