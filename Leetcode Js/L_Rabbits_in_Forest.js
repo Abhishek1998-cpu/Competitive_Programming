@@ -24,5 +24,4 @@ var numRabbits = function (answers) {
   return count;
 };
 
-// const X = numRabbits;
 console.log(numRabbits([1, 1, 2]));
