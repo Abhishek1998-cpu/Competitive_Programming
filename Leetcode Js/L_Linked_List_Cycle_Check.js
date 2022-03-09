@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
@@ -31,4 +29,3 @@ var hasCycle = function (head) {
   }
   return false;
 };
->>>>>>> 41cafca (Linked List Cycle Check)
