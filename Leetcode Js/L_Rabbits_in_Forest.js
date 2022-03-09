@@ -6,6 +6,7 @@ var numRabbits = function (answers) {
   var map = new Map();
   for (let i = 0; i < answers.length; i++) {
     if (map.has(answers[i])) {
+      console.log("Hello World");
       map.set(answers[i], map.get(answers[i]) + 1);
     } else {
       map.set(answers[i], 1);
