@@ -16,8 +16,26 @@ var kthSmallest = function (matrix, k) {
   return Array[k - 1];
 };
 
+// O(n) Solution using Array.flat() method of Js
+var kthSmallest2 = function (matrix, k) {
+  return matrix.flat().sort(function (a, b) {
+    return a - b;
+  })[k - 1];
+};
+
+// console.log(
+//   kthSmallest(
+//     [
+//       [1, 5, 9],
+//       [10, 11, 13],
+//       [12, 13, 15],
+//     ],
+//     8
+//   )
+// );
+
 console.log(
-  kthSmallest(
+  kthSmallest2(
     [
       [1, 5, 9],
       [10, 11, 13],
@@ -27,4 +45,4 @@ console.log(
   )
 );
 
-console.log(kthSmallest([[-5]], 1));
+// console.log(kthSmallest([[-5]], 1));
