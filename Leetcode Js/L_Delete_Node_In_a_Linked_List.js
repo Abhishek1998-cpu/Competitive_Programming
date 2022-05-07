@@ -1,4 +1,5 @@
 // Delete Node in a Linked List
+// Only reference to the Node is given
 // Easy Question
 
 /**
