@@ -5,33 +5,34 @@
 
 var setMatrixZeroes = (row, col, matrix) => {
   for (let i = 0; i < matrix.length; i++) {
-    matrix[i][col] = 0;
+    matrix[i][col] = 0
   }
   for (let i = 0; i < matrix[0].length; i++) {
-    matrix[row][i] = 0;
+    matrix[row][i] = 0
   }
-};
+}
 
 var setZeroes = function (matrix) {
-  const zeroes = [];
+  const zeroes = []
   for (let i = 0; i < matrix.length; i++) {
     for (let j = 0; j < matrix[i].length; j++) {
       if (matrix[i][j] === 0) {
-        zeroes.push([i, j]);
+        zeroes.push([i, j])
       }
     }
   }
+  console.log(zeroes)
 
   for (let address = 0; address < zeroes.length; address++) {
-    let row = zeroes[address][0];
-    let col = zeroes[address][1];
-    console.log(row);
-    console.log(col);
-    setMatrixZeroes(row, col, matrix);
+    let row = zeroes[address][0]
+    let col = zeroes[address][1]
+    // console.log(row)
+    // console.log(col)
+    setMatrixZeroes(row, col, matrix)
   }
 
-  return matrix;
-};
+  return matrix
+}
 
 console.log(
   setZeroes([
@@ -39,4 +40,11 @@ console.log(
     [1, 0, 1],
     [1, 1, 1],
   ])
-);
+)
+
+console.log(
+  setZeroes([
+    [0, 0],
+    [1, 0],
+  ])
+)
